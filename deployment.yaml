@@ -27,7 +27,7 @@ spec:
         app: auth-service
     spec:
       containers:
-        - name: api-gateway
-          image: fotopiece/api-gateway:latest
+        - name: auth-service
+          image: fotopiece/auth-service:latest
           ports:
             - containerPort: 8082
