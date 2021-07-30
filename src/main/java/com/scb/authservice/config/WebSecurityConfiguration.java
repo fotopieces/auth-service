@@ -1,7 +1,7 @@
 package com.scb.authservice.config;
 
 import com.scb.authservice.model.UserRole;
-import com.scb.authservice.service.CustomUserDetailsService;
+//import com.scb.authservice.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -20,8 +20,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     private final String signingKey;
 
-    @Autowired
-    private CustomUserDetailsService customUserDetailsService;
+//    @Autowired
+//    private CustomUserDetailsService customUserDetailsService;
 
     @Autowired
     public WebSecurityConfiguration(@Value("${security.jwt.signing-key}") String signingKey) {
